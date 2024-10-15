@@ -1,0 +1,26 @@
+Start
+
+User Input:
+  -User enters desired topic on Streamlit interface
+
+Backend (Django):
+ -Fetch Topic Data:
+     -Check if data for the entered topic exists in the database
+     -If not, prompt user to provide questions and options
+     -If data exists, retrieve relevant MCQ questions and options
+
+Frontend (Streamlit):
+  -Display Questions:
+     -Present each question with its options to the user
+
+User Interaction: User selects an answer option.
+
+Backend (Django):
+   -Store Answer:
+        -Record the selected answer for the current question in the database, linked to the user's session
+
+Loop through Questions:
+    -Repeat the process for each question in the topic
+
+End of Quiz:
+    -Display user's score based on correct answers
